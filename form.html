@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Request | A.N.T.R</title>
+    <link rel="icon" href="logo icon .png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+<div class="page-transition">
+    <span class="pt-logo">A.N.T.R</span>
+</div>
+
+<div class="overlay"></div>
+
+<main class="form-page">
+
+    <div class="form-container">
+
+        <span class="form-label">PROJECT REQUEST</span>
+
+        <h1>Let's Work Together</h1>
+        
+        <p>Tell me about your project and I'll contact you within 3 business days.</p>
+
+        <form id="projectForm">
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>First Name</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Family Name</label>
+                    <input type="text" name="family_name" required>
+                </div>
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Phone Number</label>
+                    <input type="tel" name="phone" required>
+                </div>
+
+                <div class="input-box">
+                    <label>Email Address</label>
+                    <input type="email" name="email" required>
+                </div>
+
+            </div>
+            <div class="input-box">
+                <label>Service Needed</label>
+                <select id="service" name="service" required>
+                    <option value="">Choose a Service</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="video">Video Editing</option>
+                    <option value="motion">Motion Graphics</option>
+                    <option value="music">Music Production</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Project Type</label>
+                <select id="projectType" name="project_type" required>
+                    <option value="">Select Service First</option>
+                </select>
+            </div>
+
+            <div class="input-box">
+                <label>Project Description (Optional)</label>
+                <textarea name="description" rows="6" placeholder="Describe your project"></textarea>
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-box">
+                    <label>Budget (Optional)</label>
+                    <input type="text" name="budget" placeholder="100 DT">
+                </div>
+
+                <div class="input-box">
+                    <label>Deadline (Optional)</label>
+                    <input type="date" name="deadline">
+                </div>
+
+            </div>
+
+            <div class="form-buttons">
+
+                <button type="submit" class="submit-btn">Send Request</button>
+
+                <button type="button" class="back-btn" onclick="history.back()">Go Back</button>
+
+            </div>
+
+        </form>
+
+    </div>
+
+</main>
+
+<script>
+    emailjs.init("IB2Z7dhVOvGsolxol");
+</script>
+
+<script src="main.js"></script>
+
+</body>
+</html>
